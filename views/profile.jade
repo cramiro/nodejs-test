@@ -88,7 +88,7 @@ html
       #portfolio-content-block.portfolio-content.block
         .container
           #grid.row
-          each val, index in {1:{url:'http://www.olapic.com/1', image:'images.olapic.com/1'}, 2:{url: 'http://www.olapic.com/2', image:'images.olapic.com/2'}, 3:{url: 'http://www.olapic.com/3', image:'images.olapic.com/3'}}
+          each val, index in products
               .portfolio-item.mix.col-xs-12.col-sm-6.col-md-4
                 a(href= val.url, target='_blank')
                   .portfolio-image
