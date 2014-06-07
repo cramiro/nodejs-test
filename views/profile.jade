@@ -88,13 +88,13 @@ html
       #portfolio-content-block.portfolio-content.block
         .container
           #grid.row
-          each val, index in products
+          each val in products
               .portfolio-item.mix.col-xs-12.col-sm-6.col-md-4
                 a(href= val.url, target='_blank')
                   .portfolio-image
-                    img.img-responsive(src='img/portfolio/pix1-th.jpg', alt='Portfolio 1', title='Portfolio 1')
+                    img.img-responsive(src= val.image, alt= val.name, title= val.name)
                     .portfolio
-                      h6.portfolio-title Product Name #{index} #{val.image}
+                      h6.portfolio-title #{val.name} 
                 //
                    /portfolio-image 
             //
