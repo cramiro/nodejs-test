@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-	res.render('profile', { title: 'Express', products: [
+	res.render('profile', { user_name: 'Joe Doe', products: [
         {name: "Product 1", url:'http://www.olapic.com/1', image:'img/portfolio/pix1-th.jpg'}, 
         {name: "Product 2", url:'http://www.olapic.com/2', image:'img/portfolio/pix1-th.jpg'}, 
         {name: "Product 3", url:'http://www.olapic.com/3', image:'img/portfolio/pix1-th.jpg'}, 
