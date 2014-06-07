@@ -84,13 +84,21 @@ html
          /container 
     //
        /top-content-region 
-    h1 #{title}
     #content-region.region
       #portfolio-content-block.portfolio-content.block
         .container
           #grid.row
-            for val in products
-              h1 #{val.name}
+          each val, index in {1:{url:'http://www.olapic.com/1', image:'images.olapic.com/1'}, 2:{url: 'http://www.olapic.com/2', image:'images.olapic.com/2'}, 3:{url: 'http://www.olapic.com/3', image:'images.olapic.com/3'}}
+              .portfolio-item.mix.col-xs-12.col-sm-6.col-md-4
+                a(href= val.url, target='_blank')
+                  .portfolio-image
+                    img.img-responsive(src='img/portfolio/pix1-th.jpg', alt='Portfolio 1', title='Portfolio 1')
+                    .portfolio
+                      h6.portfolio-title Product Name #{index} val.image
+                //
+                   /portfolio-image 
+            //
+               /portfolio-item 
           //
              /row 
         //
